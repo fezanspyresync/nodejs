@@ -1,10 +1,11 @@
-const http = require('http');
+const http = require("http");
 const PORT = 3000;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World!');
+  res.setHeader("Content-Type", "text/plain");
+  res.end("Hello World!");
+  console.log("ready to die");
 });
 
 server.listen(PORT, () => {
